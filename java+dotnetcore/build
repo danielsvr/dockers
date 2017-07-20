@@ -1,0 +1,3 @@
+#!/usr/bin/sh
+
+docker build . -t danielsvr/debian-java-dotnet-base:latest --force-rm

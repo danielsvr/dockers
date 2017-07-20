@@ -1,0 +1,2 @@
+#!/usr/bin/sh
+docker images | awk '{print $3}' | tail +2 | xargs docker rmi

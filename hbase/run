@@ -1,0 +1,5 @@
+#! /bin/bash
+
+#docker run -P -v //e/Users/daniel.severin/docker-ws/hbase_data:/mnt/volumes/hbase_data -it danielsvr/hbase:latest /bin/bash
+#docker run -v docker-ws/hbase_data:/mnt/volumes/hbase_data -it danielsvr/hbase:latest /bin/bash
+docker run -P -v //e/Users/daniel.severin/docker-ws/hbase_data:/mnt/volumes/hbase_data -dt danielsvr/hbase:latest 'start-hbase.sh && tail -f /dev/null'
